@@ -1,0 +1,13 @@
+allprojects {
+  apply plugin: 'java'
+  group "org.sample"
+  version "1.0"
+}
+
+project('included-Sub1') {
+  compileJava.doFirst{ throw new RuntimeException('boom from Sub1!') }
+}
+
+project('included-Sub2') {
+  compileJava.doFirst{ throw new RuntimeException('boom from Sub2!') }
+}

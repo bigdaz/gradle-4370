@@ -1,0 +1,1 @@
+class Thing {} // to enforce compilation task to run

@@ -1,0 +1,8 @@
+apply plugin: 'java'
+group "org.sample"
+version "1.0"
+
+dependencies {
+    compile "org.sample:included-Sub1:1.0"
+    compile "org.sample:included-Sub2:1.0"
+}
